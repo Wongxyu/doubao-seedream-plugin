@@ -1,0 +1,64 @@
+{
+  "id": "doubao-seedream-image",
+  "name": "Doubao Seedream Image Generator | 豆包 Seedream 文生图工具",
+  "version": "1.0.0",
+  "description": "QwenPaw plugin for AI image generation via Doubao Seedream (4.0/4.5/5.0/5.0-lite) and other OpenAI-compatible image APIs. Auto-downloads and displays images inline in WebUI.",
+  "author": "scad12138",
+  "entry": {
+    "backend": "plugin.py"
+  },
+  "dependencies": ["httpx>=0.24.0"],
+  "min_version": "1.1.6",
+  "meta": {
+    "tool_name": "generate_image",
+    "tool_description": "调用豆包 Seedream 等文生图模型生成图片，自动下载并在 WebUI 内联展示",
+    "tool_icon": "🎨",
+    "requires_config": true,
+    "config_fields": [
+      {
+        "name": "api_key",
+        "label": "API Key",
+        "type": "password",
+        "required": true,
+        "placeholder": "your-ark-api-key",
+        "help": "火山方舟 API Key（必填）"
+      },
+      {
+        "name": "base_url",
+        "label": "Base URL",
+        "type": "text",
+        "required": true,
+        "placeholder": "https://ark.cn-beijing.volces.com/api/plan/v3",
+        "help": "API Base URL（必填），火山方舟默认: https://ark.cn-beijing.volces.com/api/plan/v3"
+      },
+      {
+        "name": "model",
+        "label": "模型名称",
+        "type": "text",
+        "required": true,
+        "placeholder": "doubao-seedream-5.0-lite",
+        "help": "模型 ID（必填），支持: doubao-seedream-4-0-250828 / doubao-seedream-4-5-251128 / doubao-seedream-5-0-260128 / doubao-seedream-5.0-lite 等"
+      },
+      {
+        "name": "default_size",
+        "label": "默认分辨率",
+        "type": "select",
+        "required": false,
+        "options": ["1024x1024", "1792x1024", "1024x1792", "2K", "3K", "4K"],
+        "default": "2K",
+        "help": "默认分辨率（取决于模型: 4.0 支持 1K-4K, 4.5 支持 2K-4K, 5.0 支持 2K-3K）"
+      },
+      {
+        "name": "timeout",
+        "label": "请求超时（秒）",
+        "type": "number",
+        "required": false,
+        "placeholder": "90",
+        "min": 10,
+        "max": 300,
+        "default": 90,
+        "help": "HTTP 请求超时（默认 90 秒，3K/4K 图片建议 120+）"
+      }
+    ]
+  }
+}
