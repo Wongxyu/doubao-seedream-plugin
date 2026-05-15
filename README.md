@@ -44,7 +44,7 @@ qwenpaw plugin install ./doubao-seedream-plugin
 | Field | Value |
 |-------|-------|
 | **API Key** | 火山方舟 API Key（[获取地址](https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey)） |
-| **Base URL** | `https://ark.cn-beijing.volces.com/api/plan/v3` |
+| **Base URL** | `https://ark.cn-beijing.volces.com/api/v3` |
 | **模型名称** | 如 `doubao-seedream-5.0-lite` |
 | **默认分辨率** | `2K` |
 | **超时** | `90`（3K/4K 建议 120+） |
