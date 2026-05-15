@@ -28,8 +28,8 @@
         "label": "Base URL",
         "type": "text",
         "required": true,
-        "placeholder": "https://ark.cn-beijing.volces.com/api/plan/v3",
-        "help": "API Base URL（必填），火山方舟默认: https://ark.cn-beijing.volces.com/api/plan/v3"
+        "placeholder": "https://ark.cn-beijing.volces.com/api/v3",
+        "help": "API Base URL（必填），火山方舟默认: https://ark.cn-beijing.volces.com/api/v3（标准端点，适用 5.0-lite / 4.0 / 4.5）\n注意: /api/plan/v3 仅适用于支持 agent plan 的模型"
       },
       {
         "name": "model",
