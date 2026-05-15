@@ -87,3 +87,7 @@ class DoubaoSeedreamImagePlugin:
 
         except Exception:
             logger.debug("Could not add tool to agent config", exc_info=True)
+
+
+# QwenPaw requires plugin.py to export a 'plugin' object
+plugin = DoubaoSeedreamImagePlugin()
