@@ -27,13 +27,13 @@
 ### Quick Install | 一键安装
 
 ```bash
-qwenpaw plugin install https://github.com/scad12138/doubao-seedream-plugin/archive/refs/heads/main.zip
+qwenpaw plugin install https://github.com/scad12138/doubao-seedream-qwenpaw-plugin/archive/refs/heads/main.zip
 ```
 
 ### From Source | 从源码安装
 
 ```bash
-git clone https://github.com/scad12138/doubao-seedream-plugin.git
+git clone https://github.com/scad12138/doubao-seedream-qwenpaw-plugin.git
 qwenpaw plugin install ./doubao-seedream-plugin
 ```
 
